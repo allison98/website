@@ -1,0 +1,96 @@
+﻿/*Top nav bar*/
+.header  {
+    position: fixed;
+    background-color: black;
+    font-family: 'Lato Hairline';
+    width:99%;
+    color: white;
+    font-size: 19px;
+    top: 0;
+    z-index:10;
+}
+
+body {
+    font-family: 'Lato';
+}
+
+h1 {
+    font-size:23px;
+    text-decoration: overline;
+}
+
+h2 {
+    font-size: 20px;
+    text-decoration: overline;
+}
+
+
+u1 {
+    /* float: right;*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    top: 0;
+}
+
+li {
+    float: right;
+    list-style-type: none;
+}
+
+.titled {
+    float: left;
+
+}
+    .titled a:hover {
+        background-color: black;
+    }
+
+li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 30px 30px;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: dimgrey;
+    color: white;
+
+}
+
+/*about section*/
+.about {
+    padding-top: 100px;
+    background: white;
+    text-align: center;
+    color: black;
+    background-image: url("IMG_20171223_132552-EFFECTS.jpg");
+    background-color: white;
+    background-attachment: fixed;
+    bottom:20%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:650px;
+}
+
+.floatbox {
+    width: 500px;
+    height:300px;
+    padding: 35px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 200px;
+    background: rgba(255, 255, 255,0.5);
+}
+
+/*resume section*/
+.resume {
+    height: 1000px;
+    position: absolute;
+    color:black;
+    
+}
