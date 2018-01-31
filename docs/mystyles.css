@@ -1,0 +1,618 @@
+﻿
+* {
+    margin: 0;
+}
+
+html {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+
+/*scroll bars*/
+    body::-webkit-scrollbar {
+        width: 1em;
+    }
+
+    body::-webkit-scrollbar-track {
+        /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);*/
+        background: #f1f1f1;
+    }
+
+    body::-webkit-scrollbar-thumb {
+        background-color: darkgrey;
+        outline: 1px solid slategrey;
+    }
+
+    body::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+/*Top nav bar*/
+.header  {
+    position: fixed;
+    background-color: black;
+    font-family: 'Lato Hairline';
+    width:100%;
+    color: white;
+    font-size: 19px;
+    margin-top:0;
+    height:60px;
+    z-index:10;
+}
+
+.headerbar {
+    width: 98%;
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+    /*margin-top:10px;
+    margin-bottom:10px;*/
+    position: relative;
+    background-color: black;
+    color: white;
+    font-family: 'Lato Hairline';
+}
+
+
+#resheaderbar {
+    width: 98%;
+    text-align: center;
+    font-size: 26px;
+    padding: 40px;
+    height: 220px;
+    position: relative;
+    background-color: black;
+    color: white;
+    font-family: 'Lato Hairline';
+    line-height:70px;
+}
+
+
+.downloadbutton a {
+    outline: white solid;
+    font-size: 20px;
+    text-decoration: none;
+    height: 100px;
+    margin:auto auto 50px auto;
+    padding:10px 20px;
+    font-family: 'Lato';
+    color:white;
+    background-color: none;
+    width: 200px;
+ 
+}
+
+    .downloadbutton a:hover {
+        -webkit-animation: income;
+        -webkit-animation-duration: 1s;
+        animation: income;
+        animation-duration: 1s;
+        -moz-animation: income;
+        -moz-animation-delay: 1s;
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+       -moz-animation-fill-mode: forwards;
+    }
+
+@keyframes income {
+    from {background-color:none;color:white}
+    to {background-color:white;color:black}
+                           
+}
+
+@-moz-keyframes income {
+    from {
+        background-color: none;
+        color: white
+    }
+
+    to {
+        background-color: white;
+        color: black
+    }
+}
+
+@-webkit-keyframes income {
+    from {
+        background-color: none;
+        color: white
+    }
+
+    to {
+        background-color: white;
+        color: black
+    }
+                           
+}
+
+body {
+    font-family: 'Lato';
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0 ;
+    padding: 0 ;
+}
+
+h1 {
+    font-size: 23px;
+    padding: 10px;
+    font-family: 'Lato Hairline';
+    text-align:center;
+}
+
+h2 {
+    font-size: 22px;
+    font-family: 'Lato Hairline';
+    text-align: right;
+    padding-right: 20%;
+    vertical-align: text-bottom;
+}
+
+h3 {
+    font-family: 'Lato Hairline';
+    vertical-align: text-bottom
+}
+
+
+u1 {
+    /* float: right;*/
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    top: 0;
+}
+
+li {
+    float: right;
+    list-style-type: none;
+}
+
+.titled {
+    float: left;
+
+}
+    .titled a:hover {
+        background-color: black;
+    }
+
+li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 30px;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    color: grey;
+
+}
+
+/*about section*/
+.about {
+    padding-top: 100px;
+    background: white;
+    text-align: center;
+    color: black;
+    background-image: url("background.jpg");
+    background-color: white;
+    background-attachment: fixed;
+    bottom:20%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:1200px;
+    line-height:20px;
+}
+
+#abouttitle {
+    position: absolute;
+    right:0;
+    bottom: 28px;
+    font-size:80px;
+}
+#fliptitle {
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+    position: absolute;
+    font-size: 80px;
+    right: -206px;
+    bottom:28px;
+    color: white;
+    opacity:0.4;
+}
+
+.titlelook {
+    margin-top:170px;
+    margin-bottom:350px;
+    font-size:100px;
+    color:white;
+    font-family:'PRIMETIME';
+    text-align: center;
+    
+
+}
+
+.floatbox {
+    width: 550px;
+    height:280px;
+    padding: 35px;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 110px; 
+    color:black;
+    background-color: rgba(255,255, 255,0.8);
+    position:relative;
+}
+
+.floatbox2 {
+   
+    color:white;
+    width: 50%;
+    margin-left:auto;
+    margin-right:auto;
+    background: rgba(255, 255, 255,0.5);
+}
+
+.aboutme {
+    width:100px;
+    background-color:white;
+    color: black;
+}
+
+.seperator {
+    background-image: url("IMG_20171223_132552-EFFECTS.jpg");
+    background-color: white;
+    
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align:center;
+    font-size:35px;
+    padding-top: 100px;
+    color:black;
+  
+}
+
+
+/*resume section*/
+.resume {
+    position: relative;
+    color: black;
+    background-color: white;
+    
+}
+
+.highlights {
+    background-color: white;
+    text-align:center;
+    margin:auto;
+    color: dimgray;
+p    line-height:28px;
+
+}
+
+.subtitle {
+    font-size:30px;
+    color:darkslateblue;
+    font-style: italic;
+    padding:50px;
+}
+
+.cover {
+    width:100%;
+    height:100%;
+    background-color:white;
+    opacity:0.5;
+}
+
+.bullet {
+    list-style-type: disc;
+    list-style: disc;
+    font-size: 13px;
+    float: none;
+    text-align:left;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    margin-bottom: 60px;
+    
+}
+
+
+#pro1 {
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    width: 100%;
+    
+}
+
+.box {
+    height: 200px;
+    text-align: center;
+    color:white;
+    width: 16%;
+    margin: 20px;
+   
+}
+.box.o {
+    background-image:url('projects.jpeg');
+}
+    .box.t {
+        background-image: url('about.jpg');
+    }
+    .box.th {
+        background-image: url('resume.jpg');
+    }
+
+a:visited {
+    text-decoration:none;
+    color: inherit;
+}
+
+.name {
+    font-size:20px;
+    color:royalblue;
+    
+    font-family:'PRIMETIME';
+    line-height:20px;
+}
+
+.position {
+    font-style:italic;
+    
+}
+.time {
+    font-size:13px;
+    color:darkslateblue;
+    padding:10px;
+    margin:10px;
+}
+
+.projects {
+    position: relative;
+    padding: 60px;
+}
+
+.contacts {
+    position: relative;
+    padding: 50px;
+    background-color: darkgrey;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
+}
+
+#anchor2 {
+    display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
+}
+
+.footer {
+    height:500px;
+    padding:50px;
+    background-color:black;
+    color:pink;
+}
+
+/*time to start animating*/
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+.fade-in {
+    opacity: 0; /* make things invisible upon start */
+    -webkit-animation: fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation: fadeIn ease-in 1;
+    animation: fadeIn ease-in 1;
+    -webkit-animation-fill-mode: forwards; /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+    .fade-in.one {
+        -webkit-animation-delay: 0.7s;
+        -moz-animation-delay: 0.7s;
+        animation-delay: 0.7s;
+    }
+
+    .fade-in.two {
+        -webkit-animation-delay: 1.2s;
+        -moz-animation-delay: 1.2s;
+        animation-delay: 1.2s;
+    }
+
+    .fade-in.three {
+        -webkit-animation-delay: 1.6s;
+        -moz-animation-delay: 1.6s;
+        animation-delay: 1.6s;
+    }
+
+    .hideme {
+        opacity:0;
+    }
+
+.nav1 {
+    background-image: url("projects.jpeg");
+    color: black;
+}
+
+.nav2 {
+    background-image: url("resume.jpg");
+    color: black;
+}
+
+.nav3 {
+    background-image: url("about.jpg");
+    color: black;
+}
+
+
+
+.nav1:hover {
+    opacity: 0.5;
+    color: black;
+}
+
+.nav2:hover {
+    opacity: 0.5;
+    color: black;
+}
+
+.nav3:hover {
+    opacity: 0.5;
+    color: black;
+}
+
+.mainnavi {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 300px;
+    color: black;
+    text-decoration: none;
+}
+
+/*animate the bounce arrow*/
+.downArrow {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+}
+
+.bounce {
+    -moz-animation: bounce 3s infinite;
+    -webkit-animation: bounce 3s infinite;
+    animation: bounce 3s infinite;
+}
+
+@-moz-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        -moz-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    40% {
+        -moz-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+
+    60% {
+        -moz-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+
+@-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    40% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+
+    60% {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    40% {
+        -moz-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+
+    60% {
+        -moz-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+
+
+.proname {
+        outline: white solid;
+        font-size: 18px;
+        text-decoration: none;
+        height: 70px;
+        margin: auto;
+        padding: 10px 20px;
+        font-family: 'Lato';
+        color: white;
+        background-color: none;
+        width: 130px;
+    }
