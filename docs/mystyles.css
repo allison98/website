@@ -202,7 +202,7 @@ li a:hover {
     background: white;
     text-align: center;
     color: black;
-    background-image: url("background.jpg");
+    background-image: url('background.jpeg');
     background-color: white;
     background-attachment: fixed;
     bottom:20%;
@@ -272,7 +272,7 @@ li a:hover {
 }
 
 .seperator {
-    background-image: url("background.jpeg");
+    background-image: url('background.jpeg');
     background-color: white;
     height: 250px;
     background-size: cover;
