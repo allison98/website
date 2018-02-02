@@ -362,11 +362,11 @@ li a:hover {
    
 }
 .box.o {
-    background-image:url('box1.jpg');
+    background-image:url('box1.jpeg');
     background-size:cover;
 }
     .box.t {
-        background-image: url('box2.jpg');
+        background-image: url('box2.jpeg');
         background-size: 700px;
     }
     .box.th {
