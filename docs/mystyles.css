@@ -45,20 +45,23 @@ body {
 }
 
 .headerbar {
-    width: 98%;
+    width: auto;
     text-align: center;
-    font-size: 40px;
-    padding: 20px;
+
+ 
     /*margin-top:10px;
     margin-bottom:10px;*/
     position: relative;
     background-color: black;
     color: white;
     font-family: 'Lato Hairline';
+    font-size: 26px;
+    padding: 40px;
+   
 }
 
 
-#resheaderbar {
+#resheaderbar, #proheader {
     width: 98%;
     text-align: center;
     font-size: 26px;
@@ -269,17 +272,16 @@ li a:hover {
 }
 
 .seperator {
-    background-image: url("IMG_20171223_132552-EFFECTS.jpg");
+    background-image: url("background.jpg");
     background-color: white;
-    
     height: 250px;
     background-size: cover;
     background-repeat: no-repeat;
-    text-align:center;
-    font-size:35px;
+    text-align: center;
+    font-size: 35px;
     padding-top: 100px;
-    color:black;
-  
+    color: black;
+   
 }
 
 
@@ -296,15 +298,21 @@ li a:hover {
     text-align:center;
     margin:auto;
     color: dimgray;
-p    line-height:28px;
+    line-height:28px;
+    padding:60px;
 
 }
-
+.container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
 .subtitle {
-    font-size:30px;
-    color:darkslateblue;
+    font-size: 30px;
+    color: darkslateblue;
     font-style: italic;
-    padding:50px;
+    padding: 50px;
+  
 }
 
 .cover {
@@ -348,18 +356,22 @@ p    line-height:28px;
     height: 200px;
     text-align: center;
     color:white;
-    width: 16%;
+    width: 230px;
     margin: 20px;
+    padding: 50px 30px;
    
 }
 .box.o {
-    background-image:url('projects.jpeg');
+    background-image:url('box1.JPG');
+    background-size:cover;
 }
     .box.t {
-        background-image: url('about.jpg');
+        background-image: url('box2.JPG');
+        background-size: 700px;
     }
     .box.th {
-        background-image: url('resume.jpg');
+        background-image: url('box3.JPG');
+        background-size:600px;
     }
 
 a:visited {
@@ -369,7 +381,7 @@ a:visited {
 
 .name {
     font-size:20px;
-    color:royalblue;
+    color:darkslategray;
     
     font-family:'PRIMETIME';
     line-height:20px;
@@ -389,6 +401,8 @@ a:visited {
 .projects {
     position: relative;
     padding: 60px;
+    width:100%;
+    text-align:center;
 }
 
 .contacts {
@@ -407,7 +421,7 @@ a:visited {
     visibility: hidden;
 }
 
-#anchor2 {
+.anchor2 {
     display: block;
     position: relative;
     top: -50px;
@@ -415,10 +429,10 @@ a:visited {
 }
 
 .footer {
-    height:500px;
+    height:200px;
     padding:50px;
     background-color:black;
-    color:pink;
+    color:white;
 }
 
 /*time to start animating*/
@@ -491,6 +505,15 @@ a:visited {
     .hideme {
         opacity:0;
     }
+
+.hideme3 {
+    opacity: 0;
+}
+
+.hideme2 {
+    opacity: 0;
+}
+
 
 .nav1 {
     background-image: url("projects.jpeg");
@@ -609,7 +632,7 @@ a:visited {
         font-size: 18px;
         text-decoration: none;
         height: 70px;
-        margin: auto;
+        margin: 60px auto;
         padding: 10px 20px;
         font-family: 'Lato';
         color: white;
