@@ -12,7 +12,7 @@ body {
 }
 
 
-/*scroll bars*/
+    /*scroll bars*/
     body::-webkit-scrollbar {
         width: 1em;
     }
@@ -27,28 +27,26 @@ body {
         outline: 1px solid slategrey;
     }
 
-    body::-webkit-scrollbar-thumb:hover {
-        background: #555;
-    }
+        body::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
 
 /*Top nav bar*/
-.header  {
+.header {
     position: fixed;
     background-color: black;
     font-family: 'Lato Hairline';
-    width:100%;
+    width: 100%;
     color: white;
     font-size: 19px;
-    margin-top:0;
-    height:60px;
-    z-index:10;
+    margin-top: 0;
+    height: 60px;
+    z-index: 10;
 }
 
 .headerbar {
     width: auto;
     text-align: center;
-
- 
     /*margin-top:10px;
     margin-bottom:10px;*/
     position: relative;
@@ -57,7 +55,6 @@ body {
     font-family: 'Lato Hairline';
     font-size: 26px;
     padding: 40px;
-   
 }
 
 
@@ -71,7 +68,7 @@ body {
     background-color: black;
     color: white;
     font-family: 'Lato Hairline';
-    line-height:70px;
+    line-height: 70px;
 }
 
 
@@ -80,13 +77,12 @@ body {
     font-size: 20px;
     text-decoration: none;
     height: 100px;
-    margin:auto auto 50px auto;
-    padding:10px 20px;
+    margin: auto auto 50px auto;
+    padding: 10px 20px;
     font-family: 'Lato';
-    color:white;
+    color: white;
     background-color: none;
     width: 200px;
- 
 }
 
     .downloadbutton a:hover {
@@ -98,13 +94,19 @@ body {
         -moz-animation-delay: 1s;
         animation-fill-mode: forwards;
         -webkit-animation-fill-mode: forwards;
-       -moz-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
     }
 
 @keyframes income {
-    from {background-color:none;color:white}
-    to {background-color:white;color:black}
-                           
+    from {
+        background-color: none;
+        color: white
+    }
+
+    to {
+        background-color: white;
+        color: black
+    }
 }
 
 @-moz-keyframes income {
@@ -129,22 +131,21 @@ body {
         background-color: white;
         color: black
     }
-                           
 }
 
 body {
     font-family: 'Lato';
     max-width: 100%;
     overflow-x: hidden;
-    margin: 0 ;
-    padding: 0 ;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
     font-size: 23px;
     padding: 10px;
     font-family: 'Lato Hairline';
-    text-align:center;
+    text-align: center;
 }
 
 h2 {
@@ -176,8 +177,8 @@ li {
 
 .titled {
     float: left;
-
 }
+
     .titled a:hover {
         background-color: black;
     }
@@ -190,11 +191,10 @@ li a {
     padding: 15px 30px;
 }
 
-/* Change the link color on hover */
-li a:hover {
-    color: grey;
-
-}
+    /* Change the link color on hover */
+    li a:hover {
+        color: grey;
+    }
 
 /*about section*/
 .about {
@@ -205,19 +205,20 @@ li a:hover {
     background-image: url('background2.jpeg');
     background-color: white;
     background-attachment: fixed;
-    bottom:20%;
+    bottom: 20%;
     background-size: cover;
     background-repeat: no-repeat;
-    height:1200px;
-    line-height:20px;
+    height: 1200px;
+    line-height: 20px;
 }
 
 #abouttitle {
     position: absolute;
-    right:0;
+    right: 0;
     bottom: 28px;
-    font-size:80px;
+    font-size: 80px;
 }
+
 #fliptitle {
     -moz-transform: scale(-1, 1);
     -webkit-transform: scale(-1, 1);
@@ -227,47 +228,44 @@ li a:hover {
     position: absolute;
     font-size: 80px;
     right: -206px;
-    bottom:28px;
+    bottom: 28px;
     color: white;
-    opacity:0.4;
+    opacity: 0.4;
 }
 
 .titlelook {
-    margin-top:170px;
-    margin-bottom:350px;
-    font-size:100px;
-    color:white;
-    font-family:'PRIMETIME';
+    margin-top: 170px;
+    margin-bottom: 350px;
+    font-size: 100px;
+    color: white;
+    font-family: 'PRIMETIME';
     text-align: center;
-    
-
 }
 
 .floatbox {
     width: 550px;
-    height:280px;
+    height: 280px;
     padding: 35px;
     margin-top: 200px;
     margin-left: auto;
     margin-right: auto;
-    top: 110px; 
-    color:black;
+    top: 110px;
+    color: black;
     background-color: rgba(255,255, 255,0.8);
-    position:relative;
+    position: relative;
 }
 
 .floatbox2 {
-   
-    color:white;
+    color: white;
     width: 50%;
-    margin-left:auto;
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
     background: rgba(255, 255, 255,0.5);
 }
 
 .aboutme {
-    width:100px;
-    background-color:white;
+    width: 100px;
+    background-color: white;
     color: black;
 }
 
@@ -281,7 +279,6 @@ li a:hover {
     font-size: 35px;
     padding-top: 100px;
     color: black;
-   
 }
 
 
@@ -290,36 +287,33 @@ li a:hover {
     position: relative;
     color: black;
     background-color: white;
-    
 }
 
 .highlights {
     background-color: white;
-    text-align:center;
-    margin:auto;
+    text-align: center;
+    margin: auto;
     color: dimgray;
-    line-height:28px;
-    padding:60px;
+    line-height: 28px;
+    padding: 60px;
+}
 
-}
 .container {
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
+   
 }
+
 .subtitle {
     font-size: 30px;
     color: darkslateblue;
     font-style: italic;
     padding: 50px;
-  
 }
 
 .cover {
-    width:100%;
-    height:100%;
-    background-color:white;
-    opacity:0.5;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0.5;
 }
 
 .bullet {
@@ -327,7 +321,7 @@ li a:hover {
     list-style: disc;
     font-size: 13px;
     float: none;
-    text-align:left;
+    text-align: left;
 }
 
 /* Create three equal columns that floats next to each other */
@@ -335,12 +329,12 @@ li a:hover {
     float: left;
     padding: 10px;
     margin-bottom: 60px;
-    
+    position:relative;
+    text-align:center;
 }
 
 
 #pro1 {
-
 }
 
 /* Clear floats after the columns */
@@ -349,60 +343,62 @@ li a:hover {
     display: table;
     clear: both;
     width: 100%;
-    
 }
 
 .box {
     height: 200px;
     text-align: center;
-    color:white;
+    color: white;
     width: 230px;
     margin: 20px;
     padding: 50px 30px;
-   
+    position:relative;
+    
 }
-.box.o {
-    background-image:url('box1.jpeg');
-    background-size:cover;
-}
+
+    .box.o {
+        background-image: url('box1.jpeg');
+        background-size: cover;
+    }
+
     .box.t {
         background-image: url('box2.jpeg');
         background-size: 700px;
     }
+
     .box.th {
         background-image: url('box3.jpeg');
-        background-size:600px;
+        background-size: 600px;
     }
 
 a:visited {
-    text-decoration:none;
+    text-decoration: none;
     color: inherit;
 }
 
 .name {
-    font-size:20px;
-    color:darkslategray;
-    
-    font-family:'PRIMETIME';
-    line-height:20px;
+    font-size: 20px;
+    color: darkslategray;
+    font-family: 'PRIMETIME';
+    line-height: 20px;
 }
 
 .position {
-    font-style:italic;
-    
+    font-style: italic;
 }
+
 .time {
-    font-size:13px;
-    color:darkslateblue;
-    padding:10px;
-    margin:10px;
+    font-size: 13px;
+    color: darkslateblue;
+    padding: 10px;
+    margin: 10px;
 }
 
 .projects {
     position: relative;
     padding: 60px;
-    width:100%;
-    text-align:center;
+    width: 100%;
+    text-align: center;
 }
 
 .contacts {
@@ -429,10 +425,10 @@ a:visited {
 }
 
 .footer {
-    height:200px;
-    padding:50px;
-    background-color:black;
-    color:white;
+    height: 200px;
+    padding: 50px;
+    background-color: black;
+    color: white;
 }
 
 /*time to start animating*/
@@ -502,9 +498,9 @@ a:visited {
         animation-delay: 1.6s;
     }
 
-    .hideme {
-        opacity:0;
-    }
+.hideme {
+    opacity: 0;
+}
 
 .hideme3 {
     opacity: 0;
@@ -628,14 +624,31 @@ a:visited {
 
 
 .proname {
-        outline: white solid;
-        font-size: 18px;
-        text-decoration: none;
-        height: 70px;
-        margin: 60px auto;
-        padding: 10px 20px;
-        font-family: 'Lato';
-        color: white;
-        background-color: none;
-        width: 130px;
-    }
+    outline: white solid;
+    font-size: 18px;
+    text-decoration: none;
+
+    margin: 30px auto;   
+    padding: 10px 20px;
+    font-family: 'Lato';
+    color: white;
+    background-color: none;
+    width:60%;
+    
+    
+}
+
+#show, #show2, #show3, #show4, #show5, #show6 {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#showonhover, #showonhover2, #showonhover3, #showonhover4, #showonhover5, #showonhover6 {
+    display: none;
+    text-align: center;
+    margin-top: 50px;
+}
+
