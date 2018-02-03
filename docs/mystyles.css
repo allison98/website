@@ -35,7 +35,7 @@ body {
 .header {
     position: fixed;
     background-color: black;
-    font-family: 'Lato Hairline';
+    font-family: 'Lato Thin';
     width: 100%;
     color: white;
     font-size: 19px;
@@ -52,7 +52,8 @@ body {
     position: relative;
     background-color: black;
     color: white;
-    font-family: 'Lato Hairline';
+    font-family: 'Lato';
+    font-weight:300;
     font-size: 26px;
     padding: 40px;
 }
@@ -67,7 +68,8 @@ body {
     position: relative;
     background-color: black;
     color: white;
-    font-family: 'Lato Hairline';
+    font-family: 'Lato';
+    font-weight: 300;
     line-height: 70px;
 }
 
@@ -144,20 +146,23 @@ body {
 h1 {
     font-size: 23px;
     padding: 10px;
-    font-family: 'Lato Hairline';
+    font-family: 'Lato';
+    font-weight: 300;
     text-align: center;
 }
 
 h2 {
     font-size: 22px;
-    font-family: 'Lato Hairline';
+    font-family: 'Lato';
+    font-weight: 300;
     text-align: right;
     padding-right: 20%;
     vertical-align: text-bottom;
 }
 
 h3 {
-    font-family: 'Lato Hairline';
+    font-family: 'Lato';
+    font-weight: 300;
     vertical-align: text-bottom
 }
 
@@ -236,9 +241,9 @@ li a {
 .titlelook {
     margin-top: 170px;
     margin-bottom: 350px;
-    font-size: 100px;
+    font-size: 90px;
     color: white;
-    font-family: 'PRIMETIME';
+    font-family: 'Work Sans', sans-serif;
     text-align: center;
 }
 
@@ -289,24 +294,18 @@ li a {
     background-color: white;
 }
 
-.highlights {
-    background-color: white;
-    text-align: center;
-    margin: auto;
-    color: dimgray;
-    line-height: 28px;
-    padding: 60px;
-}
+
 
 .container {
-   
+    width: 950px;
+    margin: auto;
 }
 
 .subtitle {
     font-size: 30px;
     color: darkslateblue;
     font-style: italic;
-    padding: 50px;
+    
 }
 
 .cover {
@@ -329,8 +328,8 @@ li a {
     float: left;
     padding: 10px;
     margin-bottom: 60px;
-    position:relative;
-    text-align:center;
+    position: relative;
+    text-align: center;
 }
 
 
@@ -346,11 +345,10 @@ li a {
 }
 
 .box {
-    height: 200px;
-    text-align: center;
+    height: 180px;
     color: white;
-    width: 230px;
-    margin: 20px;
+    width: 23%;
+    margin: 40px 10px;
     padding: 50px 30px;
     position:relative;
     
@@ -379,7 +377,7 @@ a:visited {
 .name {
     font-size: 20px;
     color: darkslategray;
-    font-family: 'PRIMETIME';
+    font-family: 'Work Sans', sans-serif;
     line-height: 20px;
 }
 
@@ -395,19 +393,33 @@ a:visited {
 }
 
 .projects {
-    position: relative;
+    margin:auto;
     padding: 60px;
-    width: 100%;
+    width: auto;
     text-align: center;
+}
+
+.highlights {
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    color: dimgray;
+    line-height: 28px;
+    padding: 60px;
 }
 
 .contacts {
     position: relative;
     padding: 50px;
-    background-color: darkgrey;
+  
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    background-color: white;
+    
+    color: dimgray;
+    line-height: 28px;
+    padding: 60px;
 }
 
 .anchor {
@@ -425,10 +437,12 @@ a:visited {
 }
 
 .footer {
-    height: 200px;
+    height: 60px;
     padding: 50px;
     background-color: black;
     color: white;
+    text-align:center;
+
 }
 
 /*time to start animating*/
