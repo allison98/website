@@ -7,9 +7,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Allison Yao</title>
+    <title>I'm Allison Yao</title>
     <link type="text/css" rel="stylesheet" href="mystyles.css" />
-    <link type="text/css" rel="stylesheet" href="Content/aos.css" />
 
 </head>
 
@@ -17,7 +16,7 @@
     <!--NAVIGATION BAR-->
     <div class="header" style="margin-top:0;padding-top:0;top:0;">
         <ul>
-            <li class="titled"><a href="navi.html">ALLISON YAO</a></li>
+            <li class="titled"><a href="index.html">ALLISON YAO</a></li>
             <li><a class="smoothScroll" href="#about">about</a></li>
             <li><a class="smoothScroll" href="#resume">resume</a></li>
             <li><a class="smoothScroll" href="#projects">projects</a></li>
@@ -143,19 +142,13 @@
 
             <div class="row">
 
-                <div class="column " style="width:12%;">
-                </div>
+                <div class="column " style="width:8%;">
+     </div>
 
-                <div class="column box t hideme">
+                <div class="column box t" id="b4">
 
-                    <!--show this on default
-                    <span id="pro1">project one</span>-->
-                    <!-- show this on hover -->
-
-                    <span id="show1">
-                        <p><span class="proname">microcontrollers</span></p>
-                        <br />
-                        <br />
+                    <div class="proname" id="show4">Microcontrollers</div>
+                    <div id="showonhover4">
                         <p>
                             Developed an alarm clock and temperature sensor using an 8051 microprocessor
                             and assembly language
@@ -164,34 +157,34 @@
                             In the process of designing a heart monitor and a reflow oven controller
                             as well as having other projects lined up for the future
                         </p>
-                    </span>
+                    </div>
+
 
                 </div>
 
-                <div class="column box o hideme">
+                <div class="column box o" id="b5">
                     <!--project one-->
-                    <span id="show2">
-                        <p><span class="proname">MeetMinus</span></p>
-                        <br />
-                        <br />
+
+                    <div class="proname" id="show5">MeetMinus</div>
+                    <div id="showonhover5">
                         <p> Developed an Android app prototype with basic capabilities during a Hackathon</p>
                         <p>
                             The app’s purpose is to locate the distance between phones to send
                             alerts when someone is arriving or has arrived at a predetermined location
                         </p>
-                    </span>
+                    </div>
+
+                    
                 </div>
 
-                <div class="column box th hideme">
-                    <p><span class="proname">RISC Machine</span></p>
-                    <br />
-                    <br />
-                    <p>
-                        Programmed a simple reduced instruction set computer using Verilog and Altera
-                        FPGA board while working with a partner to debug and implement code
-                    </p>
-
-
+                <div class="column box th" id="b6">
+                    <div class="proname" id="show6">RISC Machine</div>
+                    <div id="showonhover6">
+                        <p>
+                            Programmed a simple reduced instruction set computer using Verilog and Altera
+                            FPGA board while working with a partner to debug and implement code
+                        </p>
+                    </div>
                 </div>
 
             </div>
@@ -200,40 +193,43 @@
 
             <div class="row">
 
-                <div class="column " style="width:12%;">
+                <div class="column " style="width:8%;">
                 </div>
 
-                <div class="column box o hideme">
-                    <p><span class="proname">Water Treatment</span></p>
-                    <br />
-                    <br />
-                    <p>
-                        Devised a water collection, treatment and delivery
-                        system in a team of 6 using Excel simulations to find the most efficient solution
-                    </p>
+                <div class="column box o" id="b1">
+                    
+                        <div class=" proname" id="show">Water Treatment</div>
+                       
+                        <div id="showonhover">
+                            <p>
+                                Devised a water collection, treatment and delivery
+                                system in a team of 6 using Excel simulations to find the most efficient solution
+                            </p>
+                        </div>
+                   
                 </div>
 
-                <div class="column box th hideme">
-                    <p><span class="proname">Mechanical Claw</span></p>
-                    <br />
-                    <br />
-                    <p>
-                        Created a mechanical claw using an Arduino kit in a team of 3 to pick up
-                        objects as quickly as possible and succeeded in picking up a variety of objects in a limited amount of time
-                    </p>
+                <div class="column box th " id="b2">
+                    <div class="proname" id="show2">Mechanical Claw</div>
+                    <div id="showonhover2">
+                        <p>
+                            Created a mechanical claw using an Arduino kit in a team of 3 to pick up
+                            objects as quickly as possible and succeeded in picking up a variety of objects in a limited amount of time
+                        </p>
+                    </div>
                 </div>
-                <div class="column box t hideme">
-                    <p><span class="proname">Assistive Technology</span></p>
-                    <br />
-                    <br />
-                    <p>
-                        Designed and 3D printed an assistive device for those with limited arm motions to hold a guitar pick
-                    </p><p>
-                        Conducted multiple iterations through the design process to ensure greatest satisfaction of stakeholders
-                    </p>
-
+                
+                    <div class="column box t " id="b3">
+                        <div class="proname " id="show3">Assistive Technology</div>
+                        <div id="showonhover3">
+                            <p>
+                                Designed and 3D printed an assistive device for those with limited arm motions to hold a guitar pick
+                            </p><p>
+                                Conducted multiple iterations through the design process to ensure greatest satisfaction of stakeholders
+                            </p>
+                        </div>
+                   
                 </div>
-
             </div>
 
         </div>
@@ -242,21 +238,22 @@
 
 
     <!--CONTACT SECTION-->
-    <a class="anchor" id="contact"></a>
+    <!--
+        <a class="anchor" id="contact"></a>
 
-    <div class="headerbar">
-    <span style="font-family:'PRIMETIME'; font-size:50px;">CONTACT</span>
-    </div>
+        <div class="headerbar">
+        <span style="font-family:'PRIMETIME'; font-size:50px;">CONTACT</span>
+        </div>
 
-    <div class="contacts" style="height:250px; text-align: center; margin-left: auto; margin-right: auto;">
-        <p>
-            contact me here
-        </p>
-    </div>
-
+        <div class="contacts" style="height:250px; text-align: center; margin-left: auto; margin-right: auto;">
+            <p>
+                contact me here
+            </p>
+        </div>
+    -->
     <div class="footer">
         <p>
-            footer
+
         </p>
     </div>
 
@@ -292,21 +289,10 @@
 
     <script type="text/javascript" src="JavaScript.js"></script>
     <script type="text/javascript" src="scroll.js"></script>
+    <script type="text/javascript" src="hovershow.js"></script>
+
+
    
-
-    <script>
-        document.getElementById("demo").hover = function () { myFunction() };
-        document.getElementbyId("demo").mouseout = function () { mouseoutfunc() };
-
-        function myFunction() {
-            document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
-        }
-
-        function mouseoutfunc() {
-            document.getElementById("demo").innerHTML = "outyou go!";
-        }
-
-    </script>
 
     <!-- <script>
          function changetext() {
