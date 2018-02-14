@@ -66,4 +66,29 @@
         }
     );
 
+    $("#b11").hover(function () {
+        $("#b11").animate({ opacity: '1'}, 500);
+       // $("#p1").toggle();
+        $("#b22,#b33").animate({ opacity: '0.5'}, 500);
+        // $("#p3, #p2").hide();
+    });
+
+    $("#b22").hover(function () {
+        $("#b22").animate({ opacity: '1' }, 500);
+        // $("#p2").toggle();
+        $("#b11,#b33").animate({ opacity: '0.5' }, 500);
+      //  $("#p3, #p1").hide();
+
+    });
+    $("#b33").hover(function () {
+        $("#b33").animate({ opacity: '1' }, 500);
+       // $("#p3").toggle();
+        $("#b11,#b22").animate({ opacity: '0.5' }, 500);
+       // $("#p2, #p1").hide();
+    });
+});
+
+$(document).ready(function () {
+    
+
 });
