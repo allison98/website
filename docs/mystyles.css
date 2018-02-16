@@ -312,7 +312,7 @@ li a {
     margin: auto;
 }
 
-.container .column {
+.container #colfix {
     margin:10px;
    
 }
@@ -824,3 +824,5 @@ button {
     opacity: 1;
     
 }
+
+
