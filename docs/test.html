@@ -1,0 +1,85 @@
+<html>
+<body>
+    <div class="bounce">
+        <img src="test.png" style="height:100px" />
+    </div>
+    <div class="bounce pos1" style="animation-direction:reverse;">
+        <img src="test.png" style="height:100px" />
+    </div>
+</body>
+</html>
+
+<style>
+    body {
+        background-color: grey;
+    }
+
+    .pos1 {
+        position:absolute;
+        top:10%;
+        left:2%;
+    }
+
+    .bounce {
+        width: 100px;
+        height: 100px;
+        -webkit-animation: bounce 4s infinite;
+        -moz-animation: bounce 4s infinite;
+        animation: bounce 4s infinite;
+    }
+
+    .flow {
+        width: 100px;
+        height: 100px;
+        animation-delay: 2s;
+        -moz-animation: fadein;
+        -webkit-animation: fadein;
+        animation: fadein infinite;
+    }
+
+
+
+    @keyframes fadein {
+        from {
+            opacity:1;
+        }
+        to {
+            opacity:0;
+        }
+    }
+
+  
+
+    .bounce:hover {
+        width: 100px;
+        height: 100px;
+        -webkit-animation: bounce 3s infinite;
+        -moz-animation: bounce 3s infinite;
+        animation: bounce 3s infinite;
+        
+    }
+
+    @keyframes bounce {
+        0%, 90%,100% {
+            transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+        }
+
+        60% {
+            transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+        }
+
+        70% {
+            transform: rotate(-180deg);
+            -moz-transform: rotate(-180deg);
+            -webkit-transform: rotate(-180deg);
+        }
+        
+    }
+
+
+
+</style>

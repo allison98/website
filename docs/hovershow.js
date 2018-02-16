@@ -88,7 +88,3 @@
     });
 });
 
-$(document).ready(function () {
-    
-
-});
