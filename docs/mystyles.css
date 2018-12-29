@@ -40,6 +40,10 @@ body a {
             background: #555;
         }
 
+p {
+    font-size:16px;
+}
+
 /*Top nav bar*/
 .header {
     position: fixed;
