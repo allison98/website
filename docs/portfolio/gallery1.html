@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="gallery1.css" />
+    <link type="text/css" rel="stylesheet" href="header.css" />
+    <link type="text/css" rel="stylesheet" href="art.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Quicksand|Work+Sans" rel="stylesheet">
+</head>
+<body>
+
+    <!--the header-->
+    <div class="myheader">
+        <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <div class="headerlinks" id="table" style="margin-top:0;padding-top:0;top:0;margin-right:3px">
+            <ul>
+
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="about.html" style="margin-left:70px">ABOUT</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">PORTFOLIO</button>
+                        <div class="dropdown-content">
+                            <a href="gallery1.html">PHOTOGRAPHY</a>
+                            <!-- <a href="gallery2.html">GRAPHICS</a>
+                            <a href="gallery3.html">ILLUSTRATION</a> -->
+                        </div>
+                    </div>
+                </li>
+                <li><a href="index.html">HOME</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <img src="Images/photo1001.jpg" id="myImg" onclick="clicked(this)" class="hover-it">
+            <img src="Images/photo2012.jpg" id="myImg" onclick="clicked(this)" class="hover-it">
+            <img src="Images/photo19011.jpg" id="myImg" onclick="clicked(this)" class="hover-it">
+            <img src="Images/photo15007.jpg" id="myImg" onclick="clicked(this)" class="hover-it">
+            <img src="Images/photo14006.jpg" id="myImg" onclick="clicked(this)" class="hover-it">
+            <img src="Images/photo15007.jpg" id="myImg" onclick="clicked(this)" class="hover-it">
+            <img src="Images/photo18010.jpg" id="myImg" onclick="clicked(this)" class="hover-it">
+        </div>
+        <div class="column">
+            <img src="Images/photo5017.jpg" id="myImg" onclick="clicked(this)" class="hover-it">
+            <img src="Images/photo6018.jpg" id="myImg" onclick="clicked(this)" class="hover-it">
+            <img src="Images/photo8020.jpg" id="myImg" onclick="clicked(this)" class="hover-it">
+            <img src="Images/photo9021.jpg" id="myImg" onclick="clicked(this)" class="hover-it">
+            <img src="Images/photo7019.jpg" id="myImg" onclick="clicked(this)" class="hover-it">
+            <img src="Images/photo20013.jpg" id="myImg" onclick="clicked(this)" class="hover-it">
+            <img src="Images/photo21014.jpg" id="myImg" onclick="clicked(this)" class="hover-it">
+        </div>
+        <div class="column">
+            <img src="Images/photo10002.jpg" id="myImg" onclick="clicked(this)" class="hover-it">
+            <img src="Images/photo11003.jpg" id="myImg" onclick="clicked(this)" class="hover-it">
+            <img src="Images/photo12004.jpg" id="myImg" onclick="clicked(this)" class="hover-it">
+            <img src="Images/photo13005.jpg" id="myImg" onclick="clicked(this)" class="hover-it">
+            <img src="Images/photo16008.jpg" id="myImg" onclick="clicked(this)" class="hover-it">
+            <img src="Images/photo17009.jpg" id="myImg" onclick="clicked(this)" class="hover-it">
+            <img src="Images/photo3016.jpg" id="myImg" onclick="clicked(this)" class="hover-it">
+        </div>
+
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- The Close Button -->
+        <span class="close" onclick="closed()">&times;</span>
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+    </div>
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+
+    <script src="Scripts/jquery-1.10.2.js"></script>
+
+    <script src="Scripts/jquery-1.10.2.intellisense.js"></script>
+
+    <script>
+        function clicked(x) {
+            // Get the modal
+            var modal = document.getElementById('myModal');
+            var modalImg = document.getElementById("img01");
+            modal.style.display = "block";
+            modalImg.src = x.src;
+        }
+        function closed() {
+
+            // When the user clicks on <span> (x), close the modal
+            var modal = document.getElementById('myModal');
+            modal.style.display = "none";
+
+        }
+
+        function myFunction(x) {
+            x.classList.toggle("change");
+            var table = document.getElementById("table");
+            if (table.style.display == "block") {
+                $("#table").fadeOut(500);
+            }
+            else {
+                $("#table").fadeIn(500);
+            }
+
+        }
+    </script>
+    <script type="text/javascript" src="gallery.js"></script>
+</body>
+</html>

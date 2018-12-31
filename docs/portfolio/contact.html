@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="header.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Quicksand|Work+Sans" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="art.css" />
+
+</head>
+<body>
+    <!-- styles -->
+    <style>
+        img.profile {
+            position: absolute;
+            left: 0%;
+            width: 79%;
+            float: right;
+            z-index: -1;
+            margin-right: 29px;
+        }
+
+        .contactbox a {
+            font-family: 'Courier New';
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            color: dimgrey;
+        }
+
+        .contactbox {
+            width: 400px;
+            float: right;
+            height: 400px;
+            background-color: #f1f1f1;
+            color: #A9A9A9;
+            font-family: 'Lato';
+            padding: 25px 50px;
+            margin: 40px 200px;
+            line-height: 1.6;
+        }
+
+        input[type=text], select, textarea {
+            width: 100%; /* Full width */
+            padding: 12px; /* Some padding */  
+            border: 1px solid #ccc; /* Gray border */
+            border-radius: 4px; /* Rounded borders */
+            box-sizing: border-box; /* Make sure that padding and width stays in place */
+            margin-top: 6px; /* Add a top margin */
+            margin-bottom: 16px; /* Bottom margin */
+            resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+        }
+
+            /* Style the submit button with a specific background color etc */
+        input[type=submit], #resubmit button {
+            background-color: silver;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+         /* When moving the mouse over the submit button, add a darker green color */
+        input[type=submit]:hover {
+            background-color: grey;
+        }
+
+        #resubmit {
+            display:none;
+            text-align:center;
+            margin:auto;
+            padding:50px;
+        }
+
+    </style>
+
+    <!--the header-->
+    <div class="myheader">
+        <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <div class="headerlinks" id="table" style="margin-top:0;padding-top:0;top:0;margin-right:3px">
+            <ul>
+
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="about.html" style="margin-left:70px">ABOUT</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">PORTFOLIO</button>
+                        <div class="dropdown-content">
+                            <a href="gallery1.html">PHOTOGRAPHY</a>
+                            <!-- <a href="gallery2.html">GRAPHICS</a>
+                            <a href="gallery3.html">ILLUSTRATION</a> -->
+                        </div>
+                    </div>
+                </li>
+                <li><a href="index.html">HOME</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- about box -->
+    <div class="back">
+        <img class="profile" src="face.png">
+        <div class="contactbox">
+        <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSf4YKOvpIL21usuMx-Z3w86ixsCXd-bZIvKjIjEm6TfHlamFQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+            
+            <label for="name">Full Name</label>
+                          <input type="text" id="name" name="entry.1744833336" placeholder="Your name...">
+                      
+                          <label for="email">Email</label>
+                          <input type="text" id="email" name="entry.107608720" placeholder="Your email...">
+                      
+                          <label for="message">Subject</label>
+                          <textarea id="message" name="entry.1417791278" placeholder="Write something..." style="height:100px"></textarea>
+                          <input type="submit" value="Submit">
+
+        </form>
+          
+         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+        <div id="resubmit">
+            Thanks for submitting
+            <br>
+            <br>
+            <button onclick="resub()">Resubmit</button>
+        </div>
+        </div>
+    </div>
+
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script src="Scripts/jquery-1.10.2.js"></script>
+    <script src="Scripts/jquery-1.10.2.intellisense.js"></script>
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+            var table = document.getElementById("table");
+            if (table.style.display == "block") {
+                $("#table").fadeOut(500);
+            }
+            else {
+                $("#table").fadeIn(500);
+            }
+
+        }
+    </script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript">var submitted=false;</script>
+    <script type="text/javascript">
+    $('#gform').on('submit', function(e) {
+      $('#gform *').fadeOut(1000);
+      $('#resubmit').delay(1000).fadeIn(1000);
+      });
+    function resub() {
+      $('#resubmit').fadeOut(1000);
+      $('#gform *').delay(1000).fadeIn(1000);
+      };  
+    </script>
+</body>
+</html>
