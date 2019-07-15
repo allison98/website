@@ -18,8 +18,8 @@
 
 <body>
     <!--NAVIGATION BAR-->
-    <div class="header" style="margin-top:0;padding-top:0;top:0;">
-        <ul>
+    <!-- <div class="header topnav" id="myTopnav" style="margin-top:0;padding-top:0;top:0;">
+        <ul class="headbar">
             <li class="titled"><a href="index.html">ALLISON YAO</a></li>
             <li><a class="smoothScroll" href="portfolio/index.html">photography</a></li>
             <li><a class="smoothScroll" href="#contact">contact</a></li>
@@ -27,6 +27,20 @@
             <li><a class="smoothScroll" href="#resume">resume</a></li>
             <li><a class="smoothScroll" href="#about">about</a></li>
         </ul>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="material-icons" style="color:white">
+                menu
+                </i>  </a>
+    </div> -->
+    <div class="header topnav" id="myTopnav" style="margin-top:0;padding-top:0;top:0;">
+            <a href="index.html" class="smoothScroll" class="active" style="float:left">ALLISON YAO</a>
+            <a href="portfolio/index.html" id = "padit" class="smoothScroll">photography</a>
+            <a href="#contact" class="smoothScroll">contact</a>
+            <a href="#projects" class="smoothScroll" >projects</a>
+            <a href="#resume" class="smoothScroll" >resume</a>
+            <a href="#about" class="smoothScroll" >about</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="material-icons">menu</i>  </a>
     </div>
 
     <!--ABOUT SECTION-->
@@ -288,7 +302,17 @@
     <script type="text/javascript" src="JavaScript.js"></script>
     <script type="text/javascript" src="scroll.js"></script>
     <script type="text/javascript" src="hovershow.js"></script>
-
+    <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+            </script>
+            
 
 </body>
 
