@@ -22,3 +22,13 @@
         } // End if
     });
 });
+
+function resize()
+{
+    var heights = window.innerHeight;
+    document.getElementById("left").style.height = heights -50 + "px";
+}
+resize();
+window.onresize = function() {
+    resize();
+};

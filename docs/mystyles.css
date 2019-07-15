@@ -41,13 +41,13 @@ body a {
         }
 
 p {
-    font-size:16px;
+    font-size:14px;
 }
 
 /*Top nav bar*/
 .header {
     position: fixed;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
     font-family: 'Lato';
     width: 100%;
     color: lightgrey;
@@ -156,6 +156,7 @@ button {
 body {
     font-family: 'Lato';
     max-width: 100%;
+    width:100%;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
@@ -221,7 +222,7 @@ li a {
 
 /*about section*/
 .about {
-    padding-top: 100px;
+    /* padding-top: 100px; */
     background: white;
     text-align: center;
     color: black;
@@ -231,7 +232,7 @@ li a {
     bottom: 20%;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 1200px;
+    height: 100%;
     line-height: 20px;
 }
 
@@ -257,25 +258,53 @@ li a {
 }
 
 .titlelook {
-    margin-top: 170px;
-    margin-bottom: 350px;
+    /*margin-top: 170px;
+    #margin-bottom: 350px;*/
     font-size: 90px;
     color: white;
     font-family: 'Work Sans', sans-serif;
     text-align: center;
+    margin: auto;
+    line-height: 100px;
+}
+
+@media only screen and (max-width: 800px) {
+    .titlelook {
+        font-size:70px; 
+    }
+    .frontpage {
+        padding-top:0px;
+    }
+}
+
+.frontpage {
+    /* height get from js */
+    width:100%;
+    height: 80vh;
+    padding-top: 270px;
 }
 
 .floatbox {
-    width: 550px;
-    height: 280px;
+    width: 40%;
+    /* height: 280px; */
     padding: 35px;
-    margin-top: 200px;
+    margin-top: -100px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom:200px;
     top: 110px;
     color: black;
     background-color: rgba(255,255, 255,0.8);
     position: relative;
+}
+.floatboxextend {
+    padding-bottom:150px
+}
+
+@media only screen and (max-width:1450px) {
+    .floatboxextend {
+        padding-bottom:50px;
+    }
 }
 
 .floatbox2 {
@@ -286,6 +315,20 @@ li a {
     background: rgba(255, 255, 255,0.5);
 }
 
+.face {
+    width:230px; 
+    float:left; 
+    margin-right:20px; 
+    padding-right:20px;
+    margin-bottom:0px; 
+    padding-bottom:20px
+}
+
+@media only screen and (max-width: 800px) {
+    .face {
+        width: 150px;
+    }
+}
 .aboutme {
     width: 100px;
     background-color: white;
@@ -305,6 +348,7 @@ li a {
     background-attachment:fixed;
 }
 
+
 .resume {
     position: relative;
     color: black;
@@ -312,15 +356,32 @@ li a {
 }
 
 .container {
-    width: 950px;
+    width: 100%;
     margin: auto;
+    margin-top:20px
 }
 
 .container #colfix {
-    margin:10px;
+    /* margin:10px; */
    
 }
+.techcol2 {
+    width:20%;
+}
+.techcol {
+    width: 15%;
+}
+@media only screen and (max-width:800px) {
+    .techcol2 {
+        width: 28%;
+    }
+}
 
+@media only screen and (max-width:800px) {
+    .techcol {
+        width:2% ;
+    }
+}
 .subtitle {
     font-size: 30px;
     color: darkslateblue;

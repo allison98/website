@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <meta name="google-site-verification" content="78rbOoBEXqNPSdc4IgTyO53pAaMyE9Rin9pmCrweqoA" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -31,21 +33,23 @@
     <div class="about ">
 
         <!--title-->
-        <div class="titlelook fade-in one">
-            HELLO, I'M ALLISON
+        <div class="frontpage">
+            <div class="titlelook fade-in one">
+                HELLO, I'M ALLISON
+            </div>
+            <!--bouncing arrow-->
+            <a class="anchor2" id="about"></a>
+            <div class="downArrow bounce">
+                <img width="40" height="40" alt="" src="down.png" />
+            </div>
         </div>
-        <!--bouncing arrow-->
-        <a class="anchor2" id="about"></a>
-        <div class="downArrow bounce">
-            <img width="40" height="40" alt="" src="down.png" />
-        </div>
+        
         <!--about box-->
-        <div class="floatbox hideme">
+        <div class="floatbox">
             <p id="abouttitle">about</p>
             <p id="fliptitle">about</p>
-            <p style="text-align:right">
-                <img src="headshot.jpg" style="width:230px; float:left; margin-right:20px; padding-right:20px;
-                margin-bottom:0px">
+            <p style="text-align:right;" class="floatboxextend">
+                <img src="headshot.jpg" class="face">
                 Hello! I'm Allison and I'm glad you found my page; here's a little about me.
                 Raised in the prairies but currently studying electrical engineering 
                 in the biomedical option at the University of British Columbia.
@@ -76,16 +80,22 @@
         <!--column start-->
         <div class="container">
             <div class="row">
-                <div class="column"id="colfix" style="width:2%;"></div>
-                <div class="column" id="colfix" style="width:25%;">
-                    <img src="skill.png" style="width:150px; padding:40px;">
+                <div class="column techcol" id="colfix"></div>
+                <div class="column techcol2" id="colfix" >
+                    <i class="material-icons" style=" font-size: 60px; color: black">
+                        build
+                        </i>
                     <p class="name">TECHNICAL SKILLS</p>
                     <br />
-                    <p>C, Verilog, Assembly,</P><p> CSS, HTML, JS</p>
-                    <p> Electronics, Microcontrollers</p>
+                    <p>C, Verilog, Assembly, Python</P>
+                        <p> CSS, HTML, JS,</p>
+                    <p>Circuit design, Electronics, Microcontrollers, </p>
+                    <p>Solidworks</p>
                 </div>
-                <div class="column" id="colfix" style="width:25%">
-                    <img src="education.svg" style="width:150px;padding:40px;">
+                <div class="column techcol2" id="colfix">
+                    <i class="material-icons" style=" font-size: 60px; color: black"> 
+                        school
+                        </i>
                     <p class="name">
                         EDUCATION
                     </p>
@@ -95,13 +105,16 @@
                     <p>Electrical Engineering, Biomedical Option, Graduation 2021</p>
 
                 </div>
-                <div class="column" id="colfix" style="width:25%">
-                    <img src="job.png" style="width:150px;padding:40px;">
+                <div class="column techcol2" id="colfix" >
+                    <i class="material-icons" style=" font-size: 60px; color: black">
+                        group
+                        </i>
                     <p class="name">
-                        JOB SKILLS
+                        ORGANIZATIONS
                     </p>
                     <br />
-                    <p> Tutoring, project management, camp lead, customer service</p>
+                    <p> Women in Engineering, Undergraduate Engineering Society</p>
+                        <p>Medical Innovation in Neurotechnology, Bionics Engineering Research and Analysis</p>
                 </div>
             </div>
         </div>
@@ -109,7 +122,7 @@
 
     <!--seperator-->
     <div class="seperator">
-        <div class="floatbox" style="width:100%;height:100%;"></div>
+        <!-- <div class="floatbox" style="width:100%;height:100%;"></div> -->
     </div>
 
 
@@ -272,7 +285,7 @@
     <script src="Scripts/jquery-1.10.2.min.js"></script>
     <script src="Scripts/jquery-1.10.2.js"></script>
     <script src="Scripts/jquery-1.10.2.intellisense.js"></script>
-   <script type="text/javascript" src="JavaScript.js"></script>
+    <script type="text/javascript" src="JavaScript.js"></script>
     <script type="text/javascript" src="scroll.js"></script>
     <script type="text/javascript" src="hovershow.js"></script>
 
