@@ -872,14 +872,24 @@ button {
         outline: 0px;
         opacity: 0.8;
     }
+.contactbutton {
+    display: inline-block;
+}
+@media only screen and (max-width:800px) {
+    .contactbutton {
+        display:block;
+    }
+    #linksheader {
+        line-height:4;
+    }
 
-
+}
 .contactbutton a {
     outline: white solid;
     font-size: 14px;
     text-decoration: none;
     height: 100px;
-    margin: 0px 0px 50px 60px;
+    margin: 40px;
     padding: 10px 20px;
     font-family: 'Lato';
     color: white;
