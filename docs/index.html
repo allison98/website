@@ -14,6 +14,11 @@
     <meta name="google-site-verification" content="78rbOoBEXqNPSdc4IgTyO53pAaMyE9Rin9pmCrweqoA" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
     rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="carousel.css" />
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -135,88 +140,85 @@
     </div>
     <!--project descriptions-->
     <div class="projects ">
-
         <div class="container">
-            <!--column start-->
-            <div class="row">
-                <div class="column " style="width:0%;"></div>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="10000">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
 
-                <div class="column box t" id="b4">
-                    <!--project one-->
-                    <div class="proname" id="show4">Microcontrollers</div>
-                    <div id="showonhover4">
-                        <p>
-                            Developed an alarm clock and temperature sensor using an 8051 microprocessor
-                            and Assembly
-                        </p>
-                        <p>
-                            Designing a heart monitor and a reflow oven controller
-                            as well as having other projects lined up for the future
-                        </p>
+              </ol>
+          
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+          
+                <div class="item active">
+                  <div class="back-item mint"></div>
+                  <div class="carousel-caption" style="z-index:100">
+                    <h3>Portable EEG Machine</h3>
+                    <p>As part of UBC MINT, researched and designed an EEG machine that is able to measure electrical signals from the brain via electrodes. Used a fourier transform on our signals for frequency analysis and designed a PCB using Altium. </p>
+                    <p><a href="https://github.com/UBCMint/MINT_FixedChallenge_2019"><b>Github</b></a></p>
+                </div>
+                </div>
+          
+                <div class="item ">
+                  <div class="back-item turb"></div>
+                  <div class="carousel-caption">
+                    <h3>Wind Turbine</h3>
+                    <p>Designed a control system for a wind turbine integrating systems such as a wind direction sensor, stepper motors and a permanent magnet synchronous generator
+                        using maximum power point tracking and peturb and observe algorithms. </p>          
                     </div>
                 </div>
+              
+                <div class="item">
+                  <div class="back-item cmd"></div>
 
-                <div class="column box o" id="b5">
-                    <!--project two-->
-                    <div class="proname" id="show5">MeetMinus</div>
-                    <div id="showonhover5">
-                        <p> Developed an Android app prototype during a Hackathon</p>
-                        <p>
-                            The app’s purpose is to use GPS to send
-                            alerts when someone is arriving or has arrived at a predetermined location
-                            meet-minus.com
-                        </p>
-                    </div>
-                </div>
+                  <div class="carousel-caption">
+                    <h3>cmd-f Hackathon: cmd-f my voice</h3>
+                    <p>Worked in a team of 4 to create a productivity web application. Uses Google Cloud Storage API to store the user-uploaded file and the Google Speech-to-Text API to transcribe audio files into text and extract the timestamps of all occurrences 
+                        of certain keywords requested by the user. Won best domain name!
+                    </p>
+                    <p><a href="https://github.com/allison98/cmd-f"><b>Github</b></a></p>
 
-                <div class="column box th" id="b6">
-                    <!--project three-->
-                    <div class="proname" id="show6">RISC Machine</div>
-                    <div id="showonhover6">
-                        <p>
-                            Programmed a simple reduced instruction set computer using Verilog and Altera
-                            FPGA board while working with a partner to debug and implement code
-                        </p>
-                    </div>
+                  </div>
                 </div>
-            </div>
-        </div>
+                <div class="item">
+                        <div class="back-item car"></div>
+      
+                        <div class="carousel-caption">
+                          <h3>Magnetic Field Controller Robot</h3>
+                          <p>Constructed a microcontroller-based (PIC32 and 8051) robot controlled by induced magnetic fields from inductors and frequency modulation programmed in C
+                                to optimize the robot for long distance control. Planned and designed robot with 5 teammates, finalizing all details in a comprehensive design process report
+                          </p>
+                        </div>
+                      </div>
+            
+              <div class="item">
+                    <div class="back-item other"></div>
+  
+                    <div class="carousel-caption">
+                      <h3>Other Projects</h3>
+                      <p><b>RISC Machine</b>: Programmed a simple reduced instruction set computer using Verilog and Altera FPGA board while working with a partner to debug and implement code </p>
+                      <br>
+                      <p><b>EMG Bionic Hand</b>: Developed a PCB for collected EMG data from muscles to control a bionic hand</p>
+                    </div>
+                  </div>
+             </div>
 
-        <div class="container">
-            <!--column start-->
-            <div class="row">
-                <div class="column " style="width:0%;"></div>
-                <div class="column box o" id="b1">
-                    <!--project four-->
-                    <div class=" proname" id="show">Water Treatment</div>
-                    <div id="showonhover">
-                        <p>
-                            Devised a water collection, treatment and delivery
-                            system in a team of 6 using Excel simulations to find the most efficient solution
-                        </p>
-                    </div>
-                </div>
-                <div class="column box th " id="b2">
-                    <!--project five-->
-                    <div class="proname" id="show2">Mechanical Claw</div>
-                    <div id="showonhover2">
-                        <p>
-                            Created a mechanical claw using an Arduino kit in a team of 3 to pick up
-                            objects as quickly as possible and succeeded in picking up a variety of objects in a limited amount of time
-                        </p>
-                    </div>
-                </div>
-                <div class="column box t " id="b3">
-                    <!--project six-->
-                    <div class="proname " id="show3">Assistive Technology</div>
-                    <div id="showonhover3">
-                        <p>
-                            Designed and 3D printed an assistive device for those with limited arm motions to hold a guitar pick
-                        </p><p>
-                            Conducted multiple iterations through the design process to ensure greatest satisfaction of stakeholders
-                        </p>
-                    </div>
-                </div>
+              <!-- Left and right controls -->
+              <a class="left carousel-control" data-target="#myCarousel" data-slide="prev">
+                    <i class="material-icons"style=" font-size: 60px; padding-top:150px">
+                            chevron_left
+                            </i>
+              </a>
+              <a class="right carousel-control" data-target="#myCarousel" data-slide="next">
+                    <i class="material-icons"style=" font-size: 60px; padding-top:150px">
+                            chevron_right
+                            </i>
+              </a>
             </div>
         </div>
 

@@ -242,7 +242,7 @@ u1 {
     top: 0;
 }
 
-li {
+li head{
     float: right;
     list-style-type: none;
 }
@@ -254,8 +254,8 @@ li {
     .titled a:hover {
         background-color: black;
     }
-
-li a {
+/* 
+li head a {
     display: block;
     color: white;
     text-decoration: none;
@@ -264,9 +264,9 @@ li a {
 }
 
     /* Change the link color on hover */
-    li a:hover {
+    /* li head a:hover {
         color: grey;
-    }
+    } */ 
 
 /*about section*/
 .about {
@@ -413,16 +413,12 @@ li a {
     background-color: white;
 }
 
-.container {
+.container1 {
     width: 100%;
     margin: auto;
     margin-top:20px
 }
 
-.container #colfix {
-    /* margin:10px; */
-   
-}
 .techcol2 {
     width:20%;
 }
@@ -533,6 +529,57 @@ a:visited {
     padding: 60px;
     width: auto;
     text-align: center;
+}
+
+.carousel-inner {
+    height:400px;
+}
+
+.carousel {
+    width:70%;
+    margin:auto;
+}
+.item {
+    height:100%;
+}
+.carousel-caption {
+    bottom:50px !important
+}
+.back-item {
+    background-size: cover ; 
+    filter: brightness(0.4);
+    height:100%;
+    width:100%;
+}
+
+.back-item.mint {
+    background-image:url(MINT.jpg);
+    background-position: center
+
+}
+.back-item.turb {
+    background-image: url(TURBINE.jpg)
+}
+.back-item.cmd {
+    background-image: url(cmdf.JPG)
+}
+
+.back-item.car {
+    background-image: url(car.JPG);
+    background-position: 50% 30%
+}
+
+.back-item.other {
+    background-image: url(box2.jpeg);
+    background-position: center
+}
+.carousel-indicators {
+    left:22%;
+}
+@media only screen and (max-width:900px) {
+    .carousel {
+        width: 100%;
+    }
 }
 
 .highlights {
