@@ -2619,6 +2619,18 @@ hr {
   } */
 }
 
+@media (min-width:800px) {
+  .img-project {
+    width:120% !important;
+    height:auto;
+  }
+}
+
+.img-project {
+  width:100%;
+  height:auto;
+}
+
 .img-place .price-img {
 width:100%; 
 /* margin-right:170px */
