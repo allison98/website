@@ -13,7 +13,7 @@
   --info: #4699F8;
   --danger: #F13057;
   --indigo: #e29578;
-  --dark: #383340;
+  --dark: #00272b;
   --light: #edf6f9;
   --gray: #6b6872;
   --white: #fff;
@@ -166,7 +166,7 @@ hr {
 }
 
 .bg-dark {
-  background-color: #383340 !important;
+  background-color: #00272b !important;
 }
 
 .bg-light {
@@ -1385,19 +1385,25 @@ hr {
 
 .btn-primary {
   color: #ffffff;
-  background-color: #3D58F3;
+  background-color:var(--primary);
   border-color: transparent !important;
 }
 
 .btn-primary:hover {
   color: #ffffff;
-  background-color: #1737f1;
+  background-color: var(--secondary);
   box-shadow: 0 4px 12px rgba(61, 88, 243, 0.3);
+}
+
+.iconic-sm.iconic-text.fg-white.rounded-circle:hover, .iconic-sm.iconic-text.fg-white.rounded-circle:focus {
+  color:black;
+  background-color:var(--indigo) !important;
+  text-decoration: none !important;
 }
 
 .btn-primary:focus {
   color: #ffffff;
-  background-color: #1737f1;
+  background-color:var(--secondary);
   box-shadow: none;
 }
 
@@ -2393,7 +2399,7 @@ hr {
 }
 
 .menu-link li a:hover {
-  color: #526bf5;
+  color: var(--secondary);
   text-decoration: none;
 }
 
@@ -2403,7 +2409,7 @@ hr {
 }
 
 .page-footer-section a:hover {
-  color: #526bf5;
+  color: var(--secondary);
   text-decoration: none;
 }
 
@@ -2601,7 +2607,22 @@ hr {
 .pricing-item.pricing-large {
   width: 400px;
 }
+@media (max-width: 992px) {
 
+.pricing-item.pricing-large {
+  width: 300px;
+}
+/* .img-place .price-img {
+  width:130% !important; 
+  margin-right:20px!important;
+  position:center;
+  } */
+}
+
+.img-place .price-img {
+width:100%; 
+/* margin-right:170px */
+}
 
 .pricing-item .theme-list {
   padding-left: 0;
@@ -2613,15 +2634,19 @@ hr {
 }
 
 .pricing-item.active {
-  background-image: url(../img/pricing_pattern_2.svg);
+  background-image: url(../img/pricing_pattern_1.svg);
 }
 
 .active .pricing-header h1 {
   color: #6b6872;
 }
+.hack.pricing-header h5{
+  color: var(--indigo);
 
-.pricing-item:not(.active) .theme-list .list-item::before {
-  background-color: rgba(95, 90, 104, 0.16);
+}
+
+.pricing-item .theme-list .list-item::before {
+  background-color: var(--warning);/*rgba(95, 90, 104, 0.16);*/
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11.568' height='7.818' viewBox='0 0 11.568 7.818'%3E%3Cpath id='Path_56' data-name='Path 56' d='M573,3671.99l4.2,2.76,5.55-6.25' transform='translate(-572.1 -3667.582)' fill='none' stroke='%235F5A68' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.3'/%3E%3C/svg%3E");
 }
 
@@ -2649,6 +2674,7 @@ hr {
   .pricing-item.active {
     transform: translateY(-50px);
   }
+  
 }
 
 /* Carousel */
