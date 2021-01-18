@@ -18,9 +18,13 @@ wow.init();
 	// jQuery to collapse the navbar on scroll
   $(window).on('scroll load', function() {
 		if ($(".navbar").offset().top > 60) {
-			$(".fixed-top").addClass("top-nav-collapse");
+      $(".fixed-top").addClass("top-nav-collapse");
+      $(".fixed-top.hack").removeClass("navbar-dark");
+      $(".fixed-top.hack").addClass("navbar-light");
 		} else {
-			$(".fixed-top").removeClass("top-nav-collapse");
+      $(".fixed-top").removeClass("top-nav-collapse");
+      $(".fixed-top.hack").addClass("navbar-dark");
+      $(".fixed-top.hack").removeClass("navbar-light");
 		}
     });
 
@@ -83,10 +87,10 @@ wow.init();
 
   /* Card Slider - Swiper */
   var cardSlider = new Swiper('.card-slider', {
-    autoplay: {
-      delay: 4000,
-      disableOnInteraction: false
-    },
+    // autoplay: {
+    //   delay: 8000,
+    //   disableOnInteraction: false
+    // },
     loop: true,
     navigation: {
       nextEl: '.swiper-button-next',

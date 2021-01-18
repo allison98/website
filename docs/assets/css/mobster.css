@@ -970,10 +970,19 @@ hr {
   }
 }
 
+.about {
+  padding: 0 20px;
+}
+
 @media (min-width: 992px) {
   .p-lg-6 {
     padding: 4rem !important;
   }
+
+  .about {
+    padding: 0 200px;
+  }
+  
 
   .pt-lg-6,
   .py-lg-6 {
