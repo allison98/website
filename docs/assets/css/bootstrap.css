@@ -4702,6 +4702,10 @@ input[type="button"].btn-block {
     padding-right: 0;
     padding-left: 0;
   }
+
+  #nav-logo {
+  width : 30px !important;
+  }
 }
 
 @media (min-width: 992px) {

@@ -55,7 +55,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-light navbar-floating fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="#home">
         <img id="nav-logo" src="../assets/img/logoicon.png" alt="">
         <!--  -->
       </a>
@@ -75,8 +75,13 @@
           <li class="nav-item">
             <a class="nav-link page-scroll" href="#resume">Resume</a>
           </li>
+          
+       
           <li class="nav-item">
             <a class="nav-link page-scroll" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="hackathons.html">Hacks</a>
           </li>
           <li class="nav-item">
             <a class="nav-link page-scroll" href="#contact">Contact</a>
@@ -178,7 +183,7 @@
         <div class="col-lg-6 text-center" style="margin-bottom:80px">
           <h1 class="mb-4">Work Experience</h1>
 
-          <a href="#" class="btn btn-gradient btn-split-icon rounded-pill">
+          <a target="_blank" href="https://www.dropbox.com/s/5rong1l74invqh5/AY_Resume.pdf?dl=0" class="btn btn-gradient btn-split-icon rounded-pill">
             <span class="icon mai-document-outline"></span>Resume
           </a>
         </div>
@@ -193,15 +198,15 @@
             <div class="pricing-body">
               <ul class="theme-list">
                 <li class="list-item">Designed 3 patents by assisting in research, development and prototyping</li>
-                <li class="list-item">Designed internal debug tools with Cadence for high-speed signals</li>
-                <li class="list-item">Conducted a study with external vendors on PCB stack ups</li>
+                <li class="list-item">Designed internal debug tools for the validation team with Cadence for high-speed signals</li>
+                <li class="list-item">Conducted a study with external vendors on PCB stack ups to determine trade-offs between costs, manufacturability, and board layout </li>
               </ul>
             </div>
           </div>
           <div class="pricing-item  pricing-large active wow zoomIn">
             <div class="pricing-header">
               <h5>Instrumentation Engineer</h5>
-              <h1 class="fw-normal">Precision NanoSystems</h1>
+              <h1 class="fw-normal pni" >Precision NanoSystems</h1>
               <h6>2019</h6>
 
             </div>
@@ -224,7 +229,7 @@
             <div class="pricing-body">
               <ul class="theme-list">
                 <li class="list-item">Automated data ingest using node.js and AWS</li>
-                <li class="list-item">Analyzed data to create data models and visualisations</li>
+                <li class="list-item">Analyzed data to create data models and visualizations for data science team</li>
               </ul>
             </div>
           </div>
@@ -251,7 +256,7 @@
           <div class="col-lg-6 py-3 mt-lg-5">
             <h1 class="mb-4">UBC Bionics Engineering and Research Design Team</h1>
             <p class="mb-4">Our current project
-              is a bionic arm prosthetic controlled via EMG, voice control and touch screen. The first prototype, GRASP,
+              is a bionic arm prosthetic controlled via EMG, voice and touch screen. The first prototype, GRASP,
               is able to complete simple tasks such as opening a jar, zipping up a hoodie and cutting bread.
             </p>
 
@@ -274,7 +279,7 @@
                 <div class="iconic-content">
                   <h5>Integration and testing</h5>
                   <p class="fs-small">Assembled the arm and conducted validation testing on the
-                    prototype with electrical test equipment such as the oscilloscope</p>
+                    prototype with electrical test equipment such as the oscilloscope integrating all motors and external sensors</p>
                 </div>
               </div>
               <div class="iconic-item wow fadeInUp">
@@ -284,7 +289,7 @@
                 <div class="iconic-content">
                   <h5>Electrical team lead</h5>
                   <p class="fs-small">Mentored junior members
-                    on topics such as Altium and electrical engineering design principles</p>
+                    on topics such as Altium and other electrical engineering design principles through weekly tutorials</p>
                 </div>
               </div>
             </div>
@@ -315,7 +320,7 @@
                 <div class="iconic-content">
                   <h5>Signal Processing</h5>
                   <p class="fs-small">Researched different signal processing techniques, focusing first on hardware
-                    solutions. Later on using MATLAB and Python
+                    solutions. Later on, using MATLAB and Python
                     scripts to further clean the data with filtering and data visualization
                   </p>
                 </div>
@@ -327,8 +332,7 @@
                 </div>
                 <div class="iconic-content">
                   <h5>PCB Design</h5>
-                  <p class="fs-small">Redesigned the final circuity onto a PCB on Altium to create a shield for an
-                    Arduino</p>
+                  <p class="fs-small">Redesigned the final circuity onto a PCB using Altium to create an Arduino shield and assisted in assembly and reflowing of the final shield</p>
                 </div>
               </div>
 
@@ -365,8 +369,8 @@
           <hr>
           <p>The custom PCB shield designed for the STM32 Nucleo was designed using
             Altium and assembled and reflowed in-house. Besides being heavily involved in the design of the
-            electronics, I also assisted in the mechanical assembly and the final integration of motors, actuators ,
-            touch screen and battery management system.</p>
+            electronics, I also assisted in the mechanical assembly and the final integration of motors, actuators,
+            touch screen, battery management system and preliminary firmware. </p>
           <b> Future Plans</b>
           <ul class="theme-list">
             <li class="list-item">
@@ -424,7 +428,7 @@
               <h2 class="fw-normal">HelpingHand</h2>
             </div>
             <div class="pricing-body">
-              <p>A robotic arm controlled remotely with computer vision. An intuitive approach to controlling
+              <p>A robotic arm controlled remotely with computer vision to use in environments where humans cannot go. An intuitive approach to controlling
                 the robotic arm with hand motions.
               </p>
               <ul class="theme-list">
@@ -444,7 +448,7 @@
               <h2 class="fw-normal">OrigamiGo</h2>
             </div>
             <div class="pricing-body">
-              <p>The application is for origami lovers.
+              <p>This application is for origami lovers.
                 This step by step visual guide will allow you to easily follow and verify your steps via computer
                 vision. </p>
               <ul class="theme-list">
@@ -496,28 +500,6 @@
             <div class="swiper-container card-slider">
               <div class="swiper-wrapper">
 
-                <!-- Slide -->
-                <div class="swiper-slide">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="iconic-md iconic-text bg-secondary fg-white rounded-circle">
-                        <span class="mai-laptop-outline"></span>
-                      </div>
-                      <p class="testimonial-text">
-                      <h5 style="color:#e29578"><b>Microcomputer System Design</b></h5>
-                      </p>
-                      <ul class="theme-list">
-                        <li class="list-item"> Interfaced a CPU core with <b>memory technologies</b> (SRAM, DRAM,
-                          EEPROM) and IO using
-                          Verilog while <b>developing software drivers and libraries in C</b></li>
-                        <li class="list-item"> 3+ years of lab projects in digital design focusing on
-                          various concepts such as <b>timing analysis, signal processing and communication
-                            protocols</b> (SPI, I2C, CANBUS)</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div> <!-- end of swiper-slide -->
-                <!-- end of slide -->
 
                 <!-- Slide -->
                 <div class="swiper-slide">
@@ -542,6 +524,28 @@
                 </div>
                 <!-- end of slide -->
 
+                <!-- Slide -->
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="iconic-md iconic-text bg-secondary fg-white rounded-circle">
+                        <span class="mai-laptop-outline"></span>
+                      </div>
+                      <p class="testimonial-text">
+                      <h5 style="color:#e29578"><b>Microcomputer System Design</b></h5>
+                      </p>
+                      <ul class="theme-list">
+                        <li class="list-item"> Interfaced a CPU core with <b>memory technologies</b> (SRAM, DRAM,
+                          EEPROM) and IO using
+                          Verilog while <b>developing software drivers and libraries in C</b></li>
+                        <li class="list-item"> 3+ years of lab projects in digital design focusing on
+                          various concepts such as <b>timing analysis, signal processing and communication
+                            protocols</b> (SPI, I2C, CANBUS)</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div> <!-- end of swiper-slide -->
+                <!-- end of slide -->
                 <!-- Slide -->
                 <div class="swiper-slide">
                   <div class="card">
@@ -649,7 +653,6 @@
         <div class="col-sm-6 col-lg-2 py-3">
           <h5 class="mb-3">Pages</h5>
           <ul class="menu-link">
-            <li><a href="#" class="">About</a></li>
             <li><a href="hackathons.html" class="">Hackathons</a></li>
             <li><a href="#resume" class="page-scroll">Resume</a></li>
           </ul>
