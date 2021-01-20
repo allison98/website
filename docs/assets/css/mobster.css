@@ -2616,16 +2616,26 @@ hr {
 .pricing-item.pricing-large {
   width: 400px;
 }
+
+.margin-nav {
+  margin-left:-20px !important;
+  }
 @media (max-width: 992px) {
 
 .pricing-item.pricing-large {
   width: 300px;
+
+ 
 }
 /* .img-place .price-img {
   width:130% !important; 
   margin-right:20px!important;
   position:center;
   } */
+
+  .margin-nav {
+    margin-left:0 !important;
+    }
 }
 
 @media (min-width:800px) {
